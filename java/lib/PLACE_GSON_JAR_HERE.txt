@@ -1,0 +1,9 @@
+Place gson-2.x.x.jar here before running build.bat.
+
+Download Gson from Maven Central:
+https://repo1.maven.org/maven2/com/google/code/gson/gson/
+
+Recommended version: gson-2.10.1.jar
+Direct link: https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar
+
+The build script (build.bat) auto-discovers any file matching gson*.jar in this folder.
