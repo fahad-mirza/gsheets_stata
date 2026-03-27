@@ -1,0 +1,5 @@
+v 3
+d Packages written by Fahad Mirza
+d Distribution-Date: 20260327
+
+p gsheets Import and export Google Sheets data in Stata

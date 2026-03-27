@@ -1,0 +1,59 @@
+d 'GSHEETS': module to import and export Google Sheets data in Stata
+d
+d  gsheets provides direct integration with Google Sheets via the
+d  Google Sheets API v4. It allows Stata users to import data from
+d  any Google Sheet directly into Stata, and export Stata datasets
+d  back to Google Sheets, without leaving the Stata environment.
+d
+d  Commands included:
+d
+d  gs4_auth authenticates with Google using OAuth2 browser flow,
+d  service account, or API key. Credentials are cached and refresh
+d  automatically across sessions.
+d
+d  gs4_deauth clears cached Google credentials.
+d
+d  gs4_get retrieves spreadsheet metadata including title, number
+d  of sheets, and sheet names.
+d
+d  import_gsheet imports data from a Google Sheet into Stata.
+d  Supports sheet name, cell range, and firstrow options. Uses
+d  parallel HTTP requests for large sheets (over 10,000 rows).
+d
+d  export_gsheet exports the current Stata dataset to a Google
+d  Sheet. Supports if/in subsetting, replace and schema-aware
+d  append modes, variable labels as headers, and a generate()
+d  option that adds a Stata-formatted datetime audit column.
+d  Automatically creates the target sheet tab if it does not exist.
+d
+d  Requires: Stata 17 or later, Java 11 or later (bundled with
+d  Stata 17+), Google Cloud project with Sheets API enabled.
+d  OAuth2 or service account required for export_gsheet.
+d  API key sufficient for reading public sheets.
+d
+d  KW: Google Sheets
+d  KW: import
+d  KW: export
+d  KW: API
+d  KW: data management
+d  KW: web data
+d
+d  Requires: Stata version 17
+d
+d  Author: Fahad Mirza
+d  Support: email fahad.mirza@example.com
+d
+d  Distribution-Date: 20260327
+d  Version: 1.1.0
+d
+f gsheets.jar
+f gs4_auth.ado
+f gs4_deauth.ado
+f gs4_get.ado
+f import_gsheet.ado
+f export_gsheet.ado
+f gs4_auth.sthlp
+f gs4_deauth.sthlp
+f gs4_get.sthlp
+f import_gsheet.sthlp
+f export_gsheet.sthlp
